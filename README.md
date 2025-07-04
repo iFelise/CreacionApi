@@ -17,11 +17,11 @@ Construida con NestJS, TypeORM y PostgreSQL (en Docker).
 
 ## ⚙️ Instalación
 
-1. Clona el repositorio
+# 1. Clona el repositorio
 git clone https://https://github.com/iFelise/CreacionApi.git
 cd api-taller
 
-2. Inicia el contenedor de PostgreSQL
+# 2. Inicia el contenedor de PostgreSQL
 # 2.1. Descarga la imagen oficial
    docker pull postgres:15
 
@@ -32,7 +32,7 @@ cd api-taller
      -e POSTGRES_DB=tallerdb \
      -p 5432:5432 -d postgres:15
 
-3. Copia y edita las variables de entorno
+# 3. Copia y edita las variables de entorno
 cambia el nombre de .env.example a .env
 
 Luego abre .env y completa tus valores:
@@ -42,11 +42,11 @@ DB_USER=postgres
 DB_PASS=tu_contraseña
 DB_NAME=tallerdb
 
-4. Instala dependencias y arranca la aplicación
+# 4. Instala dependencias y arranca la aplicación
 npm install
 npm run start:dev
 
-5. Deberías ver en consola:
+# 5. Deberías ver en consola:
 Servidor corriendo en http://localhost:3000
 
 ## 📂 Colección Postman
