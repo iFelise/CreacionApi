@@ -11,29 +11,29 @@ Construida con NestJS, TypeORM y PostgreSQL (en Docker).
 - Node.js v18+  
 - npm v9+  
 - Docker Desktop  
-- WindSurf IDE (o tu editor preferido)  
+- Tu editor de codigo favorito (IDE)  
 
 ---
 
 ## ⚙️ Instalación
 
 1. Clona el repositorio
-git clone https://github.com/tu-usuario/api-taller.git
+git clone https://https://github.com/iFelise/CreacionApi.git
 cd api-taller
 
 2. Inicia el contenedor de PostgreSQL
-# Si ya creaste el contenedor previamente:
-docker start taller-postgres
+# 2.1. Descarga la imagen oficial
+   docker pull postgres:15
 
-# Si aún no lo creaste:
-docker run --name taller-postgres \
-  -e POSTGRES_USER=postgres \
-  -e POSTGRES_PASSWORD=tu_pass \
-  -e POSTGRES_DB=tallerdb \
-  -p 5432:5432 -d postgres:15
+   # 2.2. Inicia el contenedor (si ya lo creaste antes, usa 'docker start')
+   docker run --name taller-postgres \
+     -e POSTGRES_USER=postgres \
+     -e POSTGRES_PASSWORD=tu_contraseña \
+     -e POSTGRES_DB=tallerdb \
+     -p 5432:5432 -d postgres:15
 
 3. Copia y edita las variables de entorno
-cp .env.example .env
+cambia el nombre de .env.example a .env
 
 Luego abre .env y completa tus valores:
 DB_HOST=localhost
