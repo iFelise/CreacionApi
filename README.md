@@ -19,6 +19,7 @@ Construida con NestJS, TypeORM y PostgreSQL (en Docker).
 
 Este proyecto sigue la arquitectura modular de NestJS, organizada en capas bien definidas para mantener el código limpio, escalable y fácil de mantener.
 
+```plaintext
 api-taller/
 ├─ .env.example
 ├─ postman_collection.json
@@ -38,29 +39,9 @@ api-taller/
 │  │    │          ├─ create-usuario.dto.ts
 │  │    │          └─ usuario-response.dto.ts
 │  │    ├─ categoria/
-│  │    │    ├─ categoria.controller.ts
-│  │    │    ├─ categoria.service.ts
-│  │    │    ├─ categoria.module.ts
-│  │    │    ├─ categoria.entity.ts
-│  │    │    └─ dto/
-│  │    │          ├─ create-categoria.dto.ts
-│  │    │          └─ categoria-response.dto.ts
 │  │    ├─ producto/
-│  │    │    ├─ producto.controller.ts
-│  │    │    ├─ producto.service.ts
-│  │    │    ├─ producto.module.ts
-│  │    │    ├─ producto.entity.ts
-│  │    │    └─ dto/
-│  │    │          ├─ create-producto.dto.ts
-│  │    │          └─ producto-response.dto.ts
-│  │    ├─ pedido/
-│  │         ├─ pedido.controller.ts
-│  │         ├─ pedido.service.ts
-│  │         ├─ pedido.module.ts
-│  │         ├─ pedido.entity.ts
-│  │         └─ dto/
-│  │               ├─ create-pedido.dto.ts
-│  │               └─ pedido-response.dto.ts
+│  │    └─ pedido/
+```
 
 
 ## ⚙️ Instalación
