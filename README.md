@@ -15,6 +15,54 @@ Construida con NestJS, TypeORM y PostgreSQL (en Docker).
 
 ---
 
+## 🗂️ Arquitectura del proyecto
+
+Este proyecto sigue la arquitectura modular de NestJS, organizada en capas bien definidas para mantener el código limpio, escalable y fácil de mantener.
+
+api-taller/
+├─ .env.example
+├─ postman_collection.json
+├─ README.md
+├─ package.json
+├─ tsconfig.json
+├─ src/
+│  ├─ main.ts
+│  ├─ app.module.ts
+│  ├─ modules/
+│  │    ├─ usuario/
+│  │    │    ├─ usuario.controller.ts
+│  │    │    ├─ usuario.service.ts
+│  │    │    ├─ usuario.module.ts
+│  │    │    ├─ usuario.entity.ts
+│  │    │    └─ dto/
+│  │    │          ├─ create-usuario.dto.ts
+│  │    │          └─ usuario-response.dto.ts
+│  │    ├─ categoria/
+│  │    │    ├─ categoria.controller.ts
+│  │    │    ├─ categoria.service.ts
+│  │    │    ├─ categoria.module.ts
+│  │    │    ├─ categoria.entity.ts
+│  │    │    └─ dto/
+│  │    │          ├─ create-categoria.dto.ts
+│  │    │          └─ categoria-response.dto.ts
+│  │    ├─ producto/
+│  │    │    ├─ producto.controller.ts
+│  │    │    ├─ producto.service.ts
+│  │    │    ├─ producto.module.ts
+│  │    │    ├─ producto.entity.ts
+│  │    │    └─ dto/
+│  │    │          ├─ create-producto.dto.ts
+│  │    │          └─ producto-response.dto.ts
+│  │    ├─ pedido/
+│  │         ├─ pedido.controller.ts
+│  │         ├─ pedido.service.ts
+│  │         ├─ pedido.module.ts
+│  │         ├─ pedido.entity.ts
+│  │         └─ dto/
+│  │               ├─ create-pedido.dto.ts
+│  │               └─ pedido-response.dto.ts
+
+
 ## ⚙️ Instalación
 
 # 1. Clona el repositorio
